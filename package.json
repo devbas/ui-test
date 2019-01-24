@@ -17,7 +17,6 @@
       "url": ""
     }, 
     "dependencies": {
-      "nightwatch": "1.0.18", 
-      "chromedriver": "2.45.0"
+      "nightwatch": "1.0.18"
     }
   }
