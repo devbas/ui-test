@@ -17,4 +17,5 @@ steps:
 
 - script: |
     npm install
+    npm install chromedriver --chromedriver-force-download
   displayName: 'npm install'
