@@ -15,5 +15,8 @@
     "license": "ISC",
     "bugs": {
       "url": ""
+    }, 
+    "dependencies": {
+      "nightwatch": "1.0.18"
     }
   }
