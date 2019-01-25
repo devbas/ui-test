@@ -41,6 +41,14 @@ module.exports = {
       .waitForElementVisible('#resultStats', 4000)
       .assert.urlContains('q=House')
       .end();
+  }, 
+  
+  'Finished': function(browser) {
+    browser
+      .perform(() => {
+        console.log('[perform]: Finished Test:', browser.currentTest.name)
+      })
+      .end();
   }
 
   };
