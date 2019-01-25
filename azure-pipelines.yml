@@ -17,8 +17,11 @@ steps:
 
 - script: |
     npm install
-    npm install chromedriver --chromedriver-force-download
   displayName: 'npm install'
+
+- script: |
+    npm install chromedriver --chromedriver-force-download
+  displayName: 'npm install chromedriver'
 
 - script: |
     node nightwatch.js tests/demo.js --config ./nightwatch.json
