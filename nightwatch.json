@@ -9,7 +9,10 @@
   "test_settings" : {
     "default" : {
       "desiredCapabilities": {
-        "browserName": "chrome"
+        "browserName": "chrome", 
+        "chromeOptions" : {
+          "args" : ["--no-sandbox", "--headless", "--disable-dev-shm-usage"]
+        } 
       }, 
       "launch_url": "https://distracted-stallman-b10687.netlify.com"
     }
