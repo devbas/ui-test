@@ -3,7 +3,7 @@ module.exports = {
     
     browser
       .url(browser.launchUrl)
-      .end(() => done())
+      .end()
     
   }
 }
