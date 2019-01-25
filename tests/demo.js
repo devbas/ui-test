@@ -1,5 +1,5 @@
 module.exports = {
-  'Demo test': (browser, done) => {
+  'Demo test': browser => {
     
     browser
       .url(browser.launchUrl)
