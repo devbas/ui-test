@@ -15,7 +15,7 @@
       }, 
       "launch_url": "https://distracted-stallman-b10687.netlify.com", 
       "screenshots": {
-        "enabled": true,
+        "enabled": false,
         "path": "./reports",
         "on_failure": true,
         "on_error": true
