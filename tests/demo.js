@@ -1,11 +1,9 @@
 module.exports = {
-  'Demo test' : function (browser) {
-    browser.session(function(session) {
-      console.log(session.sessionId);
-    });
+  'Demo test': (browser, done) => {
+    
     browser
       .url(browser.launchUrl)
-      // ...
-      .end();
+      .end(() => done())
+    
   }
-};
+}
