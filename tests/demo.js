@@ -2,8 +2,6 @@ module.exports = {
   '@disabled': false,
 
   'demo test google' : function (client) {
-     
-    console.log('client : ', client)
     
     client
       .url('http://google.com')
