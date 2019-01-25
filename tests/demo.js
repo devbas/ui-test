@@ -44,6 +44,8 @@ module.exports = {
   }, 
   
   'Finished': function(browser) {
+    console.log('what is your problem')
+    
     browser
       .perform(() => {
         console.log('[perform]: Finished Test:', browser.currentTest.name)
