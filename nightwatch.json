@@ -14,7 +14,13 @@
           "args" : ["--no-sandbox", "--headless", "--disable-dev-shm-usage"]
         } 
       }, 
-      "launch_url": "https://distracted-stallman-b10687.netlify.com"
+      "launch_url": "https://distracted-stallman-b10687.netlify.com", 
+      "screenshots": {
+        "enabled": true,
+        "path": "./reports",
+        "on_failure": true,
+        "on_error": true
+      }
     }
   }
 }
