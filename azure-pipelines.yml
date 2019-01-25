@@ -24,7 +24,7 @@ steps:
   displayName: 'npm install chromedriver'
 
 - script: |
-    node nightwatch.js tests/demo.js --config ./nightwatch.json
+    node nightwatch.js tests/demo.js --config ./nightwatch.json --verbose
   displayName: 'nightwatch tests/demo.js'
   
 # - script: |
