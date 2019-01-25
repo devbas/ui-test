@@ -21,5 +21,5 @@ steps:
   displayName: 'npm install'
 
 - script: |
-    watchman tests/index.js
-  displayName: 'watchman tests/index.js'
+    nightwatch tests/demo.js
+  displayName: 'nightwatch tests/demo.js'
