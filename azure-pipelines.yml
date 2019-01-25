@@ -32,6 +32,7 @@ steps:
 #   displayName: 'nightwatch tests/stepri.js'
 
 - task: PublishTestResults@2
+  condition: always()
   inputs:
     testResultsFormat: 'JUnit'
     testResultsFiles: '**/tests_output/*.xml' 
