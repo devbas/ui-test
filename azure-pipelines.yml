@@ -27,9 +27,9 @@ steps:
     node nightwatch.js tests/demo.js --config ./nightwatch.json
   displayName: 'nightwatch tests/demo.js'
   
-- script: |
-    node nightwatch.js tests/stepri.js --config ./nightwatch.json
-  displayName: 'nightwatch tests/stepri.js'
+# - script: |
+#     node nightwatch.js tests/stepri.js --config ./nightwatch.json
+#   displayName: 'nightwatch tests/stepri.js'
 
 - task: PublishTestResults@2
   inputs:
