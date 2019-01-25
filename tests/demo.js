@@ -15,7 +15,7 @@ module.exports = {
       .url('https://www.google.com')
       .waitForElementVisible('input[name="q"]', 4000)
       .setValue('input[name="q"]', 'Fruits')
-      .keys(browser.Keys.ENTER)
+//       .keys(browser.Keys.ENTER)
       .waitForElementVisible('#resultStats', 4000)
       .assert.urlContains('q=Fruits')
       .end();
