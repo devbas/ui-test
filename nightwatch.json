@@ -20,7 +20,7 @@
         "path": "./reports",
         "on_failure": true,
         "on_error": true
-      }
+      },
       "skip_testcases_on_fail": false
     }
   }
