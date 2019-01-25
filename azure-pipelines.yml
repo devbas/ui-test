@@ -30,3 +30,9 @@ steps:
 - script: |
     node nightwatch.js tests/stepri.js --config ./nightwatch.json
   displayName: 'nightwatch tests/stepri.js'
+
+- task: PublishTestResults@2
+  inputs:
+    testResultsFormat: 'JUnit'
+    testResultsFiles: '**/tests_output/*.xml' 
+    publishRunAttachments: true
