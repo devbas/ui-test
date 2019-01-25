@@ -10,7 +10,8 @@
     "default" : {
       "desiredCapabilities": {
         "browserName": "chrome"
-      }
+      }, 
+      "launch_url": "https://distracted-stallman-b10687.netlify.com"
     }
   }
 }
