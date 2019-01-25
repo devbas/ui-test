@@ -14,6 +14,20 @@ module.exports = {
       .pause(1000)
       .assert.containsText('#main', 'Night Watch')
       .end();
+  },
+  
+  'fail demo': function (client) {
+    client 
+      .url('https://bastiangeneugelijk.com')
+      .waitForElementPresent('body', 1000)
+  }, 
+  
+  'fail demo part two': function (client) {
+    client
+      .setValue('input[type=text]', ['nightwatch', client.Keys.ENTER])
+      .pause(1000)
+      .assert.containsText('#main', 'Night Watch')
+      .end();
   }
 };
 
