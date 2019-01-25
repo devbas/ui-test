@@ -20,6 +20,6 @@ steps:
     npm install chromedriver --chromedriver-force-download
   displayName: 'npm install'
 
--script: |
+- script: |
     watchman tests/index.js
   displayName: 'watchman tests/index.js'
