@@ -23,14 +23,11 @@ steps:
     npm install chromedriver --chromedriver-force-download
   displayName: 'npm install chromedriver'
 
+# Use the --verbose flag for debugging 
 - script: |
-    node nightwatch.js tests/demo.js --config ./nightwatch.json --verbose
+    node nightwatch.js tests/demo.js --config ./nightwatch.json
   displayName: 'nightwatch tests/demo.js'
   
-# - script: |
-#     node nightwatch.js tests/stepri.js --config ./nightwatch.json
-#   displayName: 'nightwatch tests/stepri.js'
-
 - task: PublishTestResults@2
   condition: always()
   inputs:
