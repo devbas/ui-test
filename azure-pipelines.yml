@@ -27,7 +27,7 @@ steps:
 - task: PublishTestResults@2
   condition: always()
   inputs:
-    testResultsFormat: 'NUnit'
+    testResultsFormat: 'JUnit'
 #     testResultsFiles: '**/tests_output/*.xml' 
     testResultsFiles: '**/tests_output/*' 
     publishRunAttachments: true
