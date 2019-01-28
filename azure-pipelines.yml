@@ -28,5 +28,6 @@ steps:
   condition: always()
   inputs:
     testResultsFormat: 'JUnit'
-    testResultsFiles: '**/tests_output/*.xml' 
+#     testResultsFiles: '**/tests_output/*.xml' 
+    testResultsFiles: '**/tests_output/*' 
     publishRunAttachments: true
