@@ -5,6 +5,7 @@
     "server_path": "node_modules/.bin/chromedriver",
     "port": 9515
   },
+  "disable_colors" : true,
   "test_settings" : {
     "default" : {
       "desiredCapabilities": {
