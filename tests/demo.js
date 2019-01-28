@@ -7,6 +7,7 @@ module.exports = {
       .keys(browser.Keys.ENTER)
       .waitForElementVisible('#resultStats', 4000)
       .assert.urlContains('q=hello+world')
+      .saveScreenshot('./reports/sales.png')
       .end();
   },
 
