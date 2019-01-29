@@ -14,8 +14,8 @@
           "args" : ["--no-sandbox", "--headless", "--disable-dev-shm-usage"]
         } 
       }, 
-      "launch_url": "https://distracted-stallman-b10687.netlify.com", 
-      "screenshots": {
+      "launch_url": "https://distracted-stallman-b10687.netlify.com", // Test target
+      "screenshots": { // Not formalised yet in the JUnit test format hence not supported by Azure DevOps. 
         "enabled": true,
         "path": "./reports",
         "on_failure": true,
