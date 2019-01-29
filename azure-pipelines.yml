@@ -23,11 +23,11 @@ steps:
 - script: |
     node nightwatch.js tests/demo.js --config ./nightwatch.json
   displayName: 'nightwatch tests/demo.js'
-  
+
+# Publishes the test results to the Azure DevOps GUI. 
 - task: PublishTestResults@2
   condition: always()
   inputs:
     testResultsFormat: 'JUnit'
-#     testResultsFiles: '**/tests_output/*.xml' 
-    testResultsFiles: '**/tests_output/*' 
+    testResultsFiles: '**/tests_output/*.xml' 
     publishRunAttachments: true
